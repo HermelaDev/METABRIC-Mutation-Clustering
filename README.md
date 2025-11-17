@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="gene-therapy.avif" alt="Description" width="300"/>
+  <img src="gene-therapy.avif" alt="Description" width="500"/>
 </p>
 
 # 🧬 METABRIC Breast Cancer Gene Expression: PCA + K-Means Clustering
@@ -52,7 +52,7 @@ This mimics how real genomic subtyping (like PAM50) works.
 (PC1 vs PC2)
 
 <p align="center">
-  <img src="PC1_vs_PC2.png" alt="Description" width="300"/>
+  <img src="PC1_vs_PC2.png" alt="Description" width="800"/>
 </p>
 
 **Interpretation (simple):**  
@@ -68,14 +68,14 @@ A long spread along the axes suggests strong biological variability among patien
 - After k = 4, curve flattens → little improvement
 
 <p align="center">
-  <img src="PElbow_Plot.png" alt="Description" width="300"/>
+  <img src="Elbow_Plot.png" alt="Description" width="700"/>
 </p>
 
 ### **Silhouette Score**
-- Peaks around **k = 3–4**, meaning good separation
+- Peaks around **k = 3-4**, meaning good separation
 
 <p align="center">
-  <img src="Silhouette_Score.png" alt="Description" width="300"/>
+  <img src="Silhouette_Score.png" alt="Description" width="700"/>
 </p>
 
 📌 **Final Decision: k = 3**
@@ -85,6 +85,10 @@ A long spread along the axes suggests strong biological variability among patien
 ## 🧩 K-Means Clustering Results
 
 Three clear molecular clusters were discovered: Cluster vs PAM50 Comparison
+
+<p align="center">
+  <img src="Compare_with_PAM50.png" alt="Description" width="700"/>
+</p>
 
 Cluster 0 → Mostly LumA / LumB (less aggressive)
 
@@ -106,11 +110,11 @@ Even without using labels, the clusters **align with real biological subtypes**,
 
 ## 🎨 Cluster Visualization (PCA Space)
 <p align="center">
-  <img src="K-Means_Clustering.png" alt="Description" width="300"/>
+  <img src="K-Means_Clustering.png" alt="Description" width="700"/>
 </p>
 
 <p align="center">
-  <img src="Cluster-Based Gene Expression.png" alt="Description" width="300"/>
+  <img src="Cluster-Based Gene Expression.png" alt="Description" width="700"/>
 </p>
 
 **Interpretation:**  
